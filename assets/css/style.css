@@ -7,11 +7,6 @@ body {
     overflow: hidden;
 }
 
-#my_canvas {
-    height: 1000;
-    width: 800;
-}
-
 header h1 {
     display: inline-block;
     font-family: 'Courier New', monospace;
