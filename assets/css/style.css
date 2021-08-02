@@ -1,4 +1,5 @@
 :root {
+    --xiketic: #03071eff;
     --dark-sienna: #370617ff;
     --rosewood: #6a040fff;
     --dark-red: #9d0208ff;
@@ -11,7 +12,7 @@
 }
 
 html {
-    background-color: var(--dark-sienna);
+    background-color: var(--xiketic);
     font-family: 'Courier New', Courier, monospace;
 }
 
@@ -23,6 +24,7 @@ header {
     height: min-content;
 }
 
+/* Header styling */
 .page-title {
     font-size: 3em;
     font-weight: bold;
@@ -55,9 +57,69 @@ a:hover{
     border-bottom: 5px solid var(--selective-yellow);
 }
 
-#subtitle {
-    overflow: hidden;
+/* Splash image styling */
+#subtitle-container {
+    position: relative;
+    text-align: center;
+}
+#subtitle-image {
     height: 200px;
     width: 100%;
     object-fit: cover;
+    object-position: 0px 75%;
+}
+
+#subtitle {
+    position: absolute;
+    bottom: 10%;
+    right: 0;
+    font-size: 2em;
+    background-color: var(--dark-sienna);
+    color: var(--persimmon);
+    padding: 5px;
+}
+
+#content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    color: var(--selective-yellow);
+}
+#content h2 {
+    font-size: 2em;
+    color: var(--rosso-corsa);
+    border-right: 5px solid var(--vermilion);
+    width: 20%;
+    text-align: right;
+    padding: 5px;
+}
+
+section {
+    display: flex;
+    justify-content: space-between;
+    margin: 5%;
+}
+
+#about p {
+    padding: 15px;
+    width: 70%;
+}
+
+/* Work tile styling */
+
+#work-tiles {
+    display: flex;
+    flex-wrap: wrap;
+    width: 70%
+}
+.tile {
+    margin: 10px;
+    width: 25%;
+}
+.tile img {
+    object-fit: cover;
+    width: 75%;
+}
+#first-tile {
+    width: 100%;
 }
