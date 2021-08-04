@@ -17,7 +17,10 @@
     --orange-web: #faa307ff;
     --selective-yellow: #ffba08ff;
 }
-
+::selection {
+    background-color: var(--orange-web);
+    color: var(--rosewood);
+}
 /* Setting page background color and font */
 
 body {
@@ -277,8 +280,13 @@ section:hover h2 {
 }
 
 @media screen and (max-width: 762px) {
-    #contact .links ul li {
+    .links ul li {
         width: 100%;
-        margin: 10px 0;
+        margin: 15px;
     }
+
+    .contact-links {
+        margin: 15px;
+    }
+
 }
