@@ -18,8 +18,6 @@
     --selective-yellow: #ffba08ff;
 }
 
-/* Setting page background color and font */
-
 body {
     background-color: var(--xiketic);
     font-family: 'Courier New', Courier, monospace;
@@ -48,14 +46,12 @@ header {
     cursor: alias;
 }
 
-/* Styling for nav bar, nav links, and contact links */
-
 nav ul li {
     display: inline-block;
     margin: 10px;
 }
 
-.nav-links, .contact-links {
+a {
     text-decoration: none;
     color: var(--rosewood);
     border-bottom: 5px solid var(--dark-sienna);
@@ -65,11 +61,11 @@ nav ul li {
     transition: font-size 0.5s;
 }
 
-.nav-links:visited, .contact-links:visited {
+a:visited {
     color: var(--rosewood);
 }
 
-.nav-links:hover, .contact-links:hover {
+a:hover {
     color: var(--selective-yellow);
     border-bottom: 5px solid var(--selective-yellow);
     text-shadow: 0px 0px 10px var(--xiketic), 0px 0px 10px var(--dark-sienna);
@@ -187,7 +183,7 @@ section:hover h2 {
     opacity: 0.75;
 }
 
-.tile-link {
+.tile a {
     display: block;
     padding: 0;
     border: none;
@@ -214,8 +210,7 @@ section:hover h2 {
 
 #second-tile .text, #third-tile .text {
     color: var(--persimmon);
-    width: 90%;
-    margin: 10px;
+    width: 100%;
 }
 
 /* Contact Information Styling */
@@ -253,7 +248,7 @@ section:hover h2 {
     .info {
         width: 100%;
     }
-    .nav-links:hover, .contact-links:hover {
+    a:hover {
         color: var(--selective-yellow);
         border-bottom: 5px solid var(--selective-yellow);
         font-size: 1.25em;
@@ -265,7 +260,7 @@ section:hover h2 {
         width: 100%;
         height: 250px;
     }
-    .tile-link {
+    .tile a {
         display: block;
         padding: 0;
         border: none;

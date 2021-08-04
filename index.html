@@ -11,20 +11,23 @@
 </head>
 
 <body>
+    <!-- Header -->
     <header>
         <h1 class="page-title">
-            Hello. I'm Tevis.
+            Hello. I'm <span>Tevis.</span>
         </h1>
+        <!-- Navigation Bar -->
         <nav>
             <ul>
-                <li><a href="#about">about me.</a></li>
-                <li><a href="#work">my work.</a></li>
-                <li><a href="#contact">contact me.</a></li>
-                <li><a href="#resume">resume.</a></li>
+                <li><a class="nav-links" href="#about">about me.</a></li>
+                <li><a class="nav-links" href="#work">my work.</a></li>
+                <li><a class="nav-links" href="#contact">contact me.</a></li>
+                <li><a class="nav-links" href="#resume">resume.</a></li>
             </ul>
         </nav>
     </header>
     <main>
+        <!-- Sub image -->
         <figure id="subtitle-container">
             <img id="subtitle-image" src="assets/images/1002-4312x2868.jpg" />
             <figcaption id="subtitle">
@@ -37,27 +40,33 @@
                 <p class="info">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem autem, quis sint doloribus dolore,
                     ex, consequuntur nulla ad illum dolor architecto distinctio! Eos necessitatibus iure in nihil
-                    quaerat neque ipsum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto saepe eaque quisquam id impedit atque non autem necessitatibus voluptatum cum ab laudantium optio eveniet, reiciendis porro. Expedita hic corporis labore!
+                    quaerat neque ipsum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto saepe
+                    eaque quisquam id impedit atque non autem necessitatibus voluptatum cum ab laudantium optio eveniet,
+                    reiciendis porro. Expedita hic corporis labore!
                 </p>
             </section>
             <section id="work">
                 <h2>my work.</h2>
                 <div class="work-tiles info">
                     <figure class="tile" id="first-tile">
-                        <a href="https://tevissaur.github.io/forene-wiki/" target="_blank">
-                            <img src="assets/images/Forene.jpg" alt="Map of the Fantasy World, Forene. Made for Dungeons and Dragons"/>
+                        <a class="tile-link" href="https://tevissaur.github.io/forene-wiki/" target="_blank">
+                            <img src="assets/images/Forene.jpg"
+                                alt="Map of the Fantasy World, Forene. Made for Dungeons and Dragons" />
+
+                            <figcaption class="overlay">
+                                <div class="text">A wiki site for my homebrew Dungeons and Dragons world.</div>
+                            </figcaption>
                         </a>
-                        <figcaption class="overlay">
-                            <div class="text">A wiki site for my homebrew Dungeons and Dragons world.</div>
-                        </figcaption>
                     </figure>
                     <figure class="tile" id="second-tile">
-                        <img src="assets/images/tictactoe.png" />
-                        <figcaption class="overlay">
-                            <div class="text">
-                                A basic tic-tac-toe game built with Javascript.
-                            </div>
-                        </figcaption>
+                        <a class="tile-link" href="https://tevissaur.github.io/orange-blossom/" target="_blank">
+                            <img src="assets/images/tictactoe.png" />
+                            <figcaption class="overlay">
+                                <div class="text">
+                                    A basic tic-tac-toe game built with Javascript.
+                                </div>
+                            </figcaption>
+                        </a>
                     </figure>
                     <figure class="tile" id="third-tile">
                         <img src="assets/images/Forene.jpg" />
@@ -71,16 +80,16 @@
                 <h2>contact me.</h2>
                 <div class="links info">
                     <ul>
-                        <li><a href="#">555-555-5555</a></li>
+                        <li><a class="contact-links" href="#">555-555-5555</a></li>
                     </ul>
                     <ul>
-                        <li><a href="#">tevis.reilly@email.com</a></li>
+                        <li><a class="contact-links" href="#">tevis.reilly@email.com</a></li>
                     </ul>
                     <ul>
-                        <li><a href="https://github.com/tevissaur/" target="_blank">Github</a></li>
+                        <li><a class="contact-links" href="https://github.com/tevissaur/" target="_blank">Github</a></li>
                     </ul>
                     <ul>
-                        <li><a href="https://www.linkedin.com/in/tevis-reilly-34014147/" target="_blank">LinkedIn</a>
+                        <li><a class="contact-links" href="https://www.linkedin.com/in/tevis-reilly-34014147/" target="_blank">LinkedIn</a>
                         </li>
                     </ul>
                 </div>
