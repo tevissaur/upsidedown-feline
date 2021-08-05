@@ -7,14 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Digital Portfolio</title>
     <link rel="stylesheet" href="assets/css/reset.css">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link id="pagestyle" rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
     <!-- Header -->
     <header>
         <h1 class="page-title">
-            Hello. I'm <span>Tevis.</span>
+            <span id="style2" onclick="style1()">Hello.</span> I'm <span id="style1" onclick="style2()">Tevis.</span>
         </h1>
         <!-- Navigation Bar -->
         <nav>
@@ -74,16 +74,19 @@
                 <h2>contact me.</h2>
                 <div class="links info">
                     <ul>
-                        <li><a class="contact-links" href="#">555-555-5555</a></li>
+                        <li><a type="tel" class="contact-links" href="#contact">555-555-5555</a></li>
                     </ul>
                     <ul>
-                        <li><a class="contact-links" href="mailto:this.is.not.a.real.email.address@email.com">tevis.reilly@email.com</a></li>
+                        <li><a class="contact-links"
+                                href="mailto:this.is.not.a.real.email.address@email.com">tevis.reilly@email.com</a></li>
                     </ul>
                     <ul>
-                        <li><a class="contact-links" href="https://github.com/tevissaur/" target="_blank">Github</a></li>
+                        <li><a class="contact-links" href="https://github.com/tevissaur/" target="_blank">Github</a>
+                        </li>
                     </ul>
                     <ul>
-                        <li><a class="contact-links" href="https://www.linkedin.com/in/tevis-reilly-34014147/" target="_blank">LinkedIn</a>
+                        <li><a class="contact-links" href="https://www.linkedin.com/in/tevis-reilly-34014147/"
+                                target="_blank">LinkedIn</a>
                         </li>
                     </ul>
                 </div>
@@ -91,8 +94,9 @@
         </div>
     </main>
     <footer>
-
+        <h3>Made with &#10084; by Tevis</h3>
     </footer>
+    <script src="assets/script.js"></script>
 </body>
 
 </html>

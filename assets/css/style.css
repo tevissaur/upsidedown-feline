@@ -5,33 +5,26 @@
     --satin-sheen-gold: #cb9d44ff;
     --saddle-brown: #854a09ff;
     --independence: #454253ff;
-    /* Sunset Color Palette */
-    --xiketic: #03071eff;
-    --dark-sienna: #370617ff;
-    --rosewood: #6a040fff;
-    --dark-red: #9d0208ff;
-    --rosso-corsa: #d00000ff;
-    --vermilion: #dc2f02ff;
-    --persimmon: #e85d04ff;
-    --carrot-orange: #f48c06ff;
-    --orange-web: #faa307ff;
-    --selective-yellow: #ffba08ff;
+    --smoky-black: #0F0A0A;
+    --puce: #D496A7;
 }
+
 ::selection {
-    background-color: var(--orange-web);
-    color: var(--rosewood);
+    background-color: var(--sky-blue-crayola);
+    color: var(--saddle-brown);
 }
+
 /* Setting page background color and font */
 
 body {
-    background-color: var(--xiketic);
+    background: linear-gradient(to top, var(--amazon), var(--smoky-black), var(--smoky-black),var(--smoky-black), var(--amazon));
     font-family: 'Courier New', Courier, monospace;
 }
 
 /* Header styling */
 
 header {
-    background-color: var(--carrot-orange);
+    background-color: var(--amazon);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -41,7 +34,8 @@ header {
 .page-title {
     font-size: 3em;
     font-weight: bold;
-    background-color: var(--vermilion);
+    color: var(--smoky-black);
+    background-color: var(--puce);
     height: min-content;
     padding: 10px;
     margin: 2% 0px;
@@ -58,24 +52,24 @@ nav ul li {
     margin: 10px;
 }
 
-.nav-links, .contact-links {
+.nav-links {
     text-decoration: none;
-    color: var(--rosewood);
-    border-bottom: 5px solid var(--dark-sienna);
+    color: var(--smoky-black);
+    border-bottom: 5px solid var(--smoky-black);
     padding: 5px;
     font-size: 1.25em;
     font-weight: 300;
     transition: font-size 0.5s;
 }
 
-.nav-links:visited, .contact-links:visited {
-    color: var(--rosewood);
+.nav-links:visited {
+    color: var(--smoky-black);
 }
 
-.nav-links:hover, .contact-links:hover {
-    color: var(--selective-yellow);
-    border-bottom: 5px solid var(--selective-yellow);
-    text-shadow: 0px 0px 10px var(--xiketic), 0px 0px 10px var(--dark-sienna);
+.nav-links:hover {
+    color: var(--smoky-black);
+    border-bottom: 5px solid var(--smoky-black);
+    text-shadow: 0px 0px 5px var(--puce), 0px 0px 5px var(--puce), 0px 0px 20px var(--amazon);
     font-size: 1.27em;
     font-weight: 500;
 }
@@ -99,8 +93,8 @@ nav ul li {
     bottom: 10%;
     right: 0;
     font-size: 2em;
-    background-color: var(--dark-sienna);
-    color: var(--persimmon);
+    background-color: var(--puce);
+    color: var(--smoky-black);
     padding: 5px;
 }
 
@@ -110,7 +104,7 @@ nav ul li {
     display: flex;
     flex-direction: column;
     width: 100%;
-    color: var(--selective-yellow);
+    color: var(--satin-sheen-gold);
 }
 
 section {
@@ -124,8 +118,8 @@ section {
 
 section h2 {
     font-size: 2em;
-    color: var(--rosso-corsa);
-    border-right: 5px solid var(--vermilion);
+    color: var(--amazon);
+    border-right: 5px solid var(--amazon);
     width: 20%;
     text-align: right;
     padding: 5px;
@@ -133,8 +127,8 @@ section h2 {
 }
 
 section:hover h2 {
-    color: var(--selective-yellow);
-    border-right: 5px solid var(--selective-yellow);
+    color: var(--satin-sheen-gold);
+    border-right: 5px solid var(--satin-sheen-gold);
     font-size: 2.2em;
 }
 
@@ -154,6 +148,7 @@ section:hover h2 {
     position: relative;
     margin: 10px;
     width: 25%;
+    overflow: hidden;
 }
 
 .tile img {
@@ -169,7 +164,7 @@ section:hover h2 {
     bottom: 0;
     width: 50%;
     text-align: right;
-    color: var(--selective-yellow);
+    color: var(--smoky-black);
     font-weight: bold;
 }
 
@@ -183,7 +178,7 @@ section:hover h2 {
     width: 100%;
     height: 100%;
     transition: .5s;
-    background: linear-gradient(to top left, var(--dark-sienna), var(--xiketic));
+    background: linear-gradient(to top left, var(--amazon), var(--satin-sheen-gold));
 }
 
 .tile:hover .overlay {
@@ -216,7 +211,7 @@ section:hover h2 {
 }
 
 #second-tile .text, #third-tile .text {
-    color: var(--persimmon);
+    color: var(--smoky-black);
     width: 90%;
     margin: 10px;
 }
@@ -230,12 +225,46 @@ section:hover h2 {
 #contact .links {
     display: flex;
     flex-wrap: wrap;
+    flex-grow: 1;
     justify-content: space-evenly;
+}
+
+.contact-links {
+    text-decoration: none;
+    color: var(--amazon);
+    border-bottom: 5px solid var(--amazon);
+    padding: 5px;
+    font-size: 1.25em;
+    font-weight: 300;
+    transition: font-size 0.5s;
+}
+
+.contact-links:visited {
+    color: var(--amazon);
+}
+
+.contact-links:hover {
+    color: var(--satin-sheen-gold);
+    border-bottom: 5px solid var(--satin-sheen-gold
+    );
+    text-shadow: 0px 0px 5px var(--puce), 0px 0px 5px var(--puce), 0px 0px 20px var(--amazon);
+    font-size: 1.27em;
+    font-weight: 500;
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    color: var(--amazon);
+}
+
+footer h3 {
+    padding: 5%;
 }
 
 /* Responsive styling */
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1024px) {
     section {
         flex-direction: column;
         margin: 1% 5% 5% 5%;
@@ -245,20 +274,20 @@ section:hover h2 {
         width: 100%;
         margin: 0 0 5% 0;
         border-right: none;
-        border-bottom: 5px solid var(--vermilion);
+        border-bottom: 5px solid var(--amazon);
     }
     section:hover h2 {
-        color: var(--selective-yellow);
+        color: var(--satin-sheen-gold);
         border-right: none;
-        border-bottom: 5px solid var(--selective-yellow);
+        border-bottom: 5px solid var(--satin-sheen-gold);
         font-size: 2.2em;
     }
     .info {
         width: 100%;
     }
     .nav-links:hover, .contact-links:hover {
-        color: var(--selective-yellow);
-        border-bottom: 5px solid var(--selective-yellow);
+        color: var(--satin-sheen-gold);
+        border-bottom: 5px solid var(--satin-sheen-gold);
         font-size: 1.25em;
     }
     .overlay {
@@ -274,7 +303,7 @@ section:hover h2 {
         border: none;
     }
     #second-tile .text, #third-tile .text {
-        color: var(--selective-yellow);
+        color: var(--smoky-black);
         width: 50%;
     }
 }
@@ -284,9 +313,7 @@ section:hover h2 {
         width: 100%;
         margin: 15px;
     }
-
     .contact-links {
         margin: 15px;
     }
-
 }
