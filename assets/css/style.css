@@ -17,7 +17,7 @@
 /* Setting page background color and font */
 
 body {
-    background: linear-gradient(to top, var(--amazon), var(--smoky-black), var(--smoky-black),var(--smoky-black), var(--amazon));
+    background: linear-gradient(to top, var(--smoky-black), var(--smoky-black), var(--smoky-black), var(--amazon));
     font-family: 'Courier New', Courier, monospace;
 }
 
@@ -228,7 +228,9 @@ section:hover h2 {
     flex-grow: 1;
     justify-content: space-evenly;
 }
-
+#contact ul li {
+    margin: 10px 0;
+}
 .contact-links {
     text-decoration: none;
     color: var(--amazon);
@@ -253,13 +255,31 @@ section:hover h2 {
 }
 
 /* Footer Styling */
-footer {
+footer {    
+    position: relative;
     text-align: center;
-    color: var(--amazon);
+    height: 200px;
+    opacity: 0.7;
+    background: linear-gradient(to top, #41805f96, #d496a763, #00000000);
 }
 
-footer h3 {
-    padding: 5%;
+footer h3 a{
+    position: absolute;
+    text-decoration: none;
+    color: var(--smoky-black);
+    bottom: 40%;
+    right: 35%;
+    left: 35%;
+    font-size: 1.3em;
+    font-weight: 600;
+    margin: 10% 0 0 0;
+    text-shadow: 0px 0px 5px var(--sky-blue-crayola), 0px 0px 20px var(--amazon);
+    cursor: alias;
+}
+
+footer h3 a{
+    text-decoration: none;
+    color: var(--smoky-black);
 }
 
 /* Responsive styling */

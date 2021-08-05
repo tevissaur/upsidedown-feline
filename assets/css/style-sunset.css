@@ -14,13 +14,19 @@
 
 body {
     background-color: var(--xiketic);
+    background: linear-gradient(to top, var(--xiketic), var(--xiketic), var(--xiketic), var(--persimmon));
     font-family: 'Courier New', Courier, monospace;
+}
+
+::selection {
+    background-color: var(--orange-web);
+    color: var(--xiketic);
 }
 
 /* Header styling */
 
 header {
-    background-color: var(--carrot-orange);
+    background-color: var(--vermilion);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -30,7 +36,7 @@ header {
 .page-title {
     font-size: 3em;
     font-weight: bold;
-    background-color: var(--vermilion);
+    background-color: var(--carrot-orange);
     height: min-content;
     padding: 10px;
     margin: 2% 0px;
@@ -40,12 +46,14 @@ header {
     cursor: alias;
 }
 
+/* Styling for nav bar, nav links, and contact links */
+
 nav ul li {
     display: inline-block;
     margin: 10px;
 }
 
-a {
+.nav-links {
     text-decoration: none;
     color: var(--rosewood);
     border-bottom: 5px solid var(--dark-sienna);
@@ -55,11 +63,11 @@ a {
     transition: font-size 0.5s;
 }
 
-a:visited {
+.nav-links:visited {
     color: var(--rosewood);
 }
 
-a:hover {
+.nav-links:hover {
     color: var(--selective-yellow);
     border-bottom: 5px solid var(--selective-yellow);
     text-shadow: 0px 0px 10px var(--xiketic), 0px 0px 10px var(--dark-sienna);
@@ -177,7 +185,7 @@ section:hover h2 {
     opacity: 0.75;
 }
 
-.tile a {
+.tile-link {
     display: block;
     padding: 0;
     border: none;
@@ -218,6 +226,59 @@ section:hover h2 {
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
+#contact ul li {
+    margin: 10px 0;
+}
+.contact-links {
+    text-decoration: none;
+    color: var(--rosewood);
+    border-bottom: 5px solid var(--dark-sienna);
+    padding: 5px;
+    font-size: 1.25em;
+    font-weight: 300;
+    transition: font-size 0.5s;
+}
+
+.contact-links:visited {
+    color: var(--rosewood);
+}
+
+.contact-links:hover {
+    color: var(--selective-yellow);
+    border-bottom: 5px solid var(--selective-yellow);
+    text-shadow: 0px 0px 10px var(--xiketic), 0px 0px 10px var(--dark-sienna);
+    font-size: 1.27em;
+    font-weight: 500;
+    text-shadow: 0px 0px 5px var(--rosewood), 0px 0px 20px var(--selective-yellow);
+
+}
+/* Footer Styling */
+
+footer {
+    position: relative;
+    text-align: center;
+    height: 200px;
+    opacity: 0.7;
+    background: linear-gradient(to top, var(--dark-sienna), var(--xiketic));
+}
+
+footer h3 a{
+    position: absolute;
+    color: var(--selective-yellow);
+    bottom: 40%;
+    right: 35%;
+    left: 35%;
+    text-decoration: none;
+    font-size: 1.3em;
+    font-weight: 600;
+    text-shadow: 0px 0px 5px var(--rosewood), 0px 0px 20px var(--selective-yellow);
+    cursor: alias;
+}
+footer h3 a:visited{
+    text-decoration: none;
+    color: var(--selective-yellow);
+    
+}
 
 /* Responsive styling */
 
@@ -242,7 +303,7 @@ section:hover h2 {
     .info {
         width: 100%;
     }
-    a:hover {
+    .nav-links:hover, .contact-links:hover {
         color: var(--selective-yellow);
         border-bottom: 5px solid var(--selective-yellow);
         font-size: 1.25em;
@@ -254,7 +315,7 @@ section:hover h2 {
         width: 100%;
         height: 250px;
     }
-    .tile a {
+    .tile-link {
         display: block;
         padding: 0;
         border: none;
