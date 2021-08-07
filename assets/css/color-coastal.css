@@ -1,0 +1,149 @@
+:root {
+    /* Coastal Elites Color Palette */
+    --sky-blue-crayola: #4fd1dfff;
+    --amazon: #41805fff;
+    --satin-sheen-gold: #cb9d44ff;
+    --saddle-brown: #854a09ff;
+    --independence: #454253ff;
+    --smoky-black: #0F0A0A;
+    --puce: #D496A7;
+    --black: #000000;
+}
+
+::selection {
+    background-color: var(--sky-blue-crayola);
+    color: var(--independence);
+}
+
+/* Setting page background color and font */
+
+body {
+    background: linear-gradient(to top, var(--smoky-black), var(--smoky-black), var(--smoky-black), var(--amazon));
+}
+
+/* Header styling */
+
+header {
+    background-color: var(--amazon);
+}
+
+#page-title {
+    color: var(--smoky-black);
+    background-color: var(--puce);
+}
+
+/* Styling for nav bar, nav links, and contact links */
+
+nav ul {
+    background-color: var(--puce);
+}
+
+.nav-links {
+    color: var(--smoky-black);
+    border-bottom: 5px solid var(--smoky-black);
+}
+
+.nav-links:visited {
+    color: var(--smoky-black);
+}
+
+.nav-links:hover {
+    color: var(--black);
+    border-bottom: 5px solid var(--black);
+    text-shadow: 0px 0px 5px var(--sky-blue-crayola), 0px 0px 5px var(--sky-blue-crayola), 0px 0px 10px var(--saddle-brown);
+}
+
+/* Splash image styling */
+
+#subtitle {
+    background-color: var(--puce);
+    color: var(--smoky-black);
+    text-shadow: 0px 0px 10px var(--amazon), 0px 0px 5px var(--saddle-brown);
+}
+
+/* Styling for main content */
+
+section h2 {
+    color: var(--amazon);
+    border-right: 5px solid var(--amazon);
+}
+
+section:hover h2 {
+    color: var(--satin-sheen-gold);
+    border-right: 5px solid var(--satin-sheen-gold);
+    text-shadow: 0px 0px 10px var(--independence), 0px 0px 5px var(--saddle-brown);
+}
+
+section p {
+    color: var(--satin-sheen-gold);
+    text-shadow: 0px 0px 10px var(--independence), 0px 0px 5px var(--saddle-brown);
+}
+
+.info {
+    color: var(--satin-sheen-gold);
+    text-shadow: 0px 0px 10px var(--independence), 0px 0px 5px var(--saddle-brown);
+}
+
+/* Work tile styling */
+
+
+
+.text {
+    color: var(--smoky-black);
+}
+
+.overlay {
+    background: linear-gradient(to top left, var(--amazon), var(--satin-sheen-gold));
+}
+
+/* Contact Information Styling */
+
+.contact-links {
+    color: var(--satin-sheen-gold);
+    border-bottom: 5px solid var(--satin-sheen-gold);
+}
+
+.contact-links:visited {
+    color: var(--satin-sheen-gold);
+}
+
+.contact-links:hover {
+    color: var(--satin-sheen-gold);
+    border-bottom: 5px solid var(--satin-sheen-gold);
+    text-shadow: 0px 0px 5px var(--puce), 0px 0px 5px var(--puce), 0px 0px 20px var(--amazon);
+}
+
+/* Footer Styling */
+
+footer {
+    background: linear-gradient(to top, var(--amazon), #00000000);
+}
+
+#to-top {
+    color: var(--smoky-black);
+    text-shadow: 0px 0px 5px var(--puce), 0px 0px 10px var(--saddle-brown), 0px 0px 20px var(--satin-sheen-gold);
+}
+
+#to-top {
+    color: var(--smoky-black);
+}
+
+/* Responsive styling */
+
+@media screen and (max-width: 1024px) {
+    header {
+        background: linear-gradient(to right, var(--smoky-black), var(--amazon), var(--amazon), var(--smoky-black));
+    }
+    
+    nav ul {
+        text-shadow: 0px 0px 10px var(--puce), 0px 0px 5px var(--saddle-brown);
+    }
+    
+    section h2 {
+        border-bottom: 5px solid var(--amazon);
+    }
+    section:hover h2 {
+        color: var(--satin-sheen-gold);
+        border-bottom: 5px solid var(--satin-sheen-gold);
+    }
+}

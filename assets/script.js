@@ -4,8 +4,8 @@ function swapStyleSheet(sheet) {
 
 
 function style1() {
-    swapStyleSheet('assets/css/style-sunset.css');
+    swapStyleSheet('assets/css/color-sunset.css');
 }
 function style2 () {
-    swapStyleSheet('assets/css/style.css');
+    swapStyleSheet('assets/css/color-coastal.css');
 }
