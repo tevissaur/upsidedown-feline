@@ -89,7 +89,7 @@ nav ul li {
 }
 
 #about, #work, #contact {
-    padding: 25px 25px 25px 0px;
+    padding: 25px 0px;
 }
 
 section h2 {
@@ -106,7 +106,6 @@ section:hover h2 {
 
 .info {
     width: 70%;
-    padding: 15px;
 }
 
 /* Work tile styling */
@@ -264,7 +263,7 @@ footer {
 }
 
 @media screen and (max-width: 360px) {
-    #about, #work, #contact {
-        padding: 5% 5px;
-    }
+   #top, #subtitle-container, footer {
+       width: 360px;
+   }
 }
