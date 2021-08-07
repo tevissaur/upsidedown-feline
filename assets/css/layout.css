@@ -11,8 +11,14 @@
     justify-content: space-between;
 }
 
+/* Setting font sizes */
 
-/* Set flex direction */
+.nav-links, .text, section p {
+    font-size: 1.3em;
+}
+
+/* Header styling */
+
 #top {
     align-items: center;
     height: min-content;
@@ -52,13 +58,15 @@ nav ul li {
     font-weight: 500;
 }
 
+/* Splash image styling */
+
 #subtitle-container {
     position: relative;
     text-align: center;
 }
 
 #subtitle-image {
-    height: 350px;
+    height: 300px;
     width: 100%;
     object-fit: cover;
     object-position: 0px 75%;
@@ -72,15 +80,16 @@ nav ul li {
     padding: 5px;
 }
 
+/* Main content styling */
+
 #content {
     flex-direction: column;
     width: 100%;
+    padding: 25px;
 }
 
-section {
-    flex-direction: row;
-    flex-wrap: wrap;
-    padding: 5%;
+#about, #work, #contact {
+    padding: 25px 25px 25px 0px;
 }
 
 section h2 {
@@ -95,13 +104,9 @@ section:hover h2 {
     font-size: 2.2em;
 }
 
-.nav-links, .text, section p {
-    font-size: 1.3em;
-}
-
 .info {
     width: 70%;
-    margin: 10px;
+    padding: 15px;
 }
 
 /* Work tile styling */
@@ -109,12 +114,13 @@ section:hover h2 {
 .tile {
     position: relative;
     margin: 10px;
-    width: 25%;
+    width: 45%;
 }
 
 .tile img {
     object-fit: cover;
     width: 100%;
+    height: 100%;
 }
 
 .text {
@@ -149,28 +155,7 @@ section:hover h2 {
     height: 100%;
 }
 
-/* Styling for specific tiles in desktop view */
-
-#first-tile {
-    width: 100%;
-}
-
-#first-tile a {
-    height: 500px;
-}
-
-#first-tile img {
-    height: 500px;
-}
-
-#second-tile img, #third-tile img {
-    height: 100%;
-}
-
-#second-tile .text, #third-tile .text {
-    width: 75%;
-}
-
+/* Contact info styling */
 
 #contact ul li {
     margin: 10px 0;
@@ -186,6 +171,8 @@ section:hover h2 {
 .contact-links:hover {
     font-size: 1.4em;
 }
+
+/* Footer styling */
 
 footer {
     position: relative;
@@ -209,7 +196,7 @@ footer {
 }
 
 @media screen and (max-width: 1024px) {
-    header {
+    #top {
         height: 5%;
         flex-direction: column;
         text-align: center;
@@ -229,8 +216,10 @@ footer {
         padding: 0px;
         background-color: #00000000;
     }
-    section {
+    #about, #work, #contact {
         flex-direction: column;
+        justify-content: flex-start;
+        flex-wrap: nowrap;
     }
     section h2 {
         text-align: left;
@@ -248,8 +237,7 @@ footer {
     .overlay {
         opacity: 0.8;
     }
-    .tile, #first-tile img, #second-tile img {
-        width: 100%;
+    .tile {
         height: 250px;
     }
     .tile-link {
@@ -257,18 +245,26 @@ footer {
         padding: 0;
         border: none;
     }
-    #second-tile .text, #third-tile .text {
-        width: 50%;
+    #links {
+        justify-content: space-evenly;
     }
 }
 
-
-@media screen and (max-width: 762px) {
-    .links ul li {
+@media screen and (max-width: 768px) {
+    #links ul li {
         width: 100%;
         margin: 15px;
     }
-    .contact-links {
-        margin: 20px;
+}
+
+@media screen and (max-width: 425px) {
+    .tile {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    #about, #work, #contact {
+        padding: 5% 5px;
     }
 }
