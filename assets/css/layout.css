@@ -11,6 +11,9 @@
     justify-content: space-between;
 }
 
+#links {
+    justify-content: space-around;
+}
 /* Setting font sizes */
 
 .nav-links, .text, section p {
@@ -89,7 +92,7 @@ nav ul li {
 }
 
 #about, #work, #contact {
-    padding: 25px 0px;
+    padding: 35px 0px;
 }
 
 section h2 {
@@ -103,7 +106,9 @@ section h2 {
 section:hover h2 {
     font-size: 2.2em;
 }
-
+#contact .info {
+    padding-right: 60px;
+}
 .info {
     width: 70%;
 }
@@ -243,6 +248,9 @@ footer {
         display: block;
         padding: 0;
         border: none;
+    }
+    #contact .info {
+        padding-right: 0px;
     }
     #links {
         justify-content: space-evenly;
