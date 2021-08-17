@@ -3,6 +3,10 @@
     font-family: 'Courier New', Courier, monospace;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 /* Init all flex containers */
 
 #top, #content, #about, #work, #work-tiles, #contact, #links {
